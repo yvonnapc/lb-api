@@ -40,7 +40,7 @@ module.exports = function(Product) {
       }
     }
   Product.validate('price', validatePositiveInteger, {
-    message: 'Price should be positive integer'
+    message: 'Price should be a positive integer'
   });
 
   function validateMinimalPrice(err, done){
